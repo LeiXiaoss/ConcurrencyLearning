@@ -20,7 +20,7 @@ public class Producer implements Runnable {
     public void run() {
         PCData data = null;
         Random r = new Random();
-        System.out.println("Start Producting id: " + Thread.currentThread().getId());
+        System.out.println("Start Producting Id: " + Thread.currentThread().getId());
         try{
             while (isRunning){
                 Thread.sleep(r.nextInt(SLEEPTIME));

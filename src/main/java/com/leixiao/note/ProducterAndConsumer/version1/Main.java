@@ -7,7 +7,9 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.LinkedBlockingDeque;
 
 public class Main {
+    //使用阻塞队列来实现生产者消费者模型
     public static void main(String[] args) throws InterruptedException {
+        //默认容量大小等于Integer.MAX_VALUE
         BlockingQueue<PCData> queue = new LinkedBlockingDeque<>();
 
         Producer p1 = new Producer(queue);
